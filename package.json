@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/pauIbanez/W1CH4-pau-ibanez/issues"
   },
-  "homepage": "https://github.com/pauIbanez/W1CH4-pau-ibanez#readme"
+  "homepage": "https://github.com/pauIbanez/W1CH4-pau-ibanez#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }
