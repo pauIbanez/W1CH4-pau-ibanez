@@ -29,6 +29,17 @@ h3 {
   align-items: center;
 }
 
+.header__cont-right {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+#compCounter {
+  font-size: 24px;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -89,10 +100,13 @@ h3 {
 }
 
 .article-edit__form-button {
-  padding-top: 5px;
-  width: 100px;
+  margin-top: 5px;
+  width: fit-content;
   height: 30px;
   background-color: #5e81d1;
   color: white;
   border-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
