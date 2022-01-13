@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
+:root {
+  --header-height: 75px;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", "sans-serif";
@@ -7,15 +11,15 @@
   font-weight: 400;
 }
 
-body {
-  margin: 0;
-  background-color: #ff8d27;
-}
-
 h1,
 h2,
 h3 {
   margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 .paddings {
@@ -45,9 +49,60 @@ h3 {
   flex-direction: column;
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .header__menu {
-  height: 100px;
+  height: 100%;
   background-color: #5e81d1;
+}
+
+.header__page-title {
+  font-size: 20px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* .main-nav__nav-item--selected { Class preparada para el menu real, comentada porque no es aplicable
+  font-weight: 600;
+} */
+
+.main-nav__nav-item {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input:checked + label {
+  font-weight: bold;
+}
+
+.main-content {
+  display: none;
+}
+
+/* .main-content--principal + .header #nav-principal:checked {
+  display: block;
+} */
+
+#nav-principal:checked ~ .main-content:nth-child(2n + 1) {
+  display: block;
 }
 
 .header__info {
@@ -57,11 +112,7 @@ h3 {
 
 .main-content {
   padding-top: 20px;
-  display: none;
-}
-
-.main-content--active {
-  display: block;
+  /* display: none; */
 }
 
 .article-edit {

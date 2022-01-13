@@ -20,13 +20,56 @@
       <section class="paddings flex-center-spaceb header__menu">
         <h1 class="header__page-title">Lista de la compra</h1>
         <nav class="main-nav">
-          <ul>
-            <li class="main-nav__nav-button main-nav__nav-button--selected">
-              Principal
-            </li>
-            <li class="main-nav__nav-button">Lista</li>
-            <li class="main-nav__nav-button">Acerca de</li>
-          </ul>
+          <input type="radio" name="nav-item" id="nav-principal" checked />
+          <label
+            for="nav-principal"
+            class="main-nav__nav-item main-nav__nav-item--nav-principal"
+            >Principal</label
+          >
+          <main class="paddings main-content">
+            <section class="flex-column article-edit">
+              <h2 class="article-edit__title">Editar artículo</h2>
+              <form class="flex-column article-edit__form">
+                <article class="flex-column article-edit__form-field">
+                  <h3 class="article-edit__field-title">Nombre:</h3>
+                  <input
+                    type="text"
+                    id="name-inpf"
+                    class="article-edit__field-input"
+                  />
+                </article>
+                <article class="article-edit__form-field">
+                  <h3
+                    class="article-edit__field-title article-edit__field-title--price"
+                  >
+                    Precio:
+                  </h3>
+                  <input
+                    type="text"
+                    id="price-inpf"
+                    class="article-edit__field-input"
+                  />
+                </article>
+                <button type="submit" class="article-edit__form-button">
+                  Modificar
+                </button>
+              </form>
+            </section>
+          </main>
+
+          <input type="radio" name="nav-item" id="nav-lista" />
+          <label
+            for="nav-lista"
+            class="main-nav__nav-item main-nav__nav-item--nav-lista"
+            >Lista</label
+          >
+
+          <input type="radio" name="nav-item" id="nav-acercade" />
+          <label
+            for="nav-acercade"
+            class="main-nav__nav-item main-nav__nav-item--nav-acercade"
+            >Acerca de</label
+          >
         </nav>
       </section>
       <section class="paddings flex-center-spaceb header__info">
@@ -41,35 +84,5 @@
         </div>
       </section>
     </header>
-    <main class="paddings main-content main-content--active">
-      <section class="flex-column article-edit">
-        <h2 class="article-edit__title">Editar artículo</h2>
-        <form class="flex-column article-edit__form">
-          <article class="flex-column article-edit__form-field">
-            <h3 class="article-edit__field-title">Nombre:</h3>
-            <input
-              type="text"
-              id="name-inpf"
-              class="article-edit__field-input"
-            />
-          </article>
-          <article class="article-edit__form-field">
-            <h3
-              class="article-edit__field-title article-edit__field-title--price"
-            >
-              Precio:
-            </h3>
-            <input
-              type="text"
-              id="price-inpf"
-              class="article-edit__field-input"
-            />
-          </article>
-          <button type="submit" class="article-edit__form-button">
-            Modificar
-          </button>
-        </form>
-      </section>
-    </main>
   </body>
 </html>
