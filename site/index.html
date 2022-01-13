@@ -44,23 +44,29 @@
         <h2 class="article-edit__title">Editar artículo</h2>
         <form class="flex-column article-edit__form">
           <article class="flex-column article-edit__form-field">
-            <h3 class="article-edit__field-title">Nombre:</h3>
+            <label for="name-inpf">
+              <h3 class="article-edit__field-title">Nombre:</h3></label
+            >
             <input
               type="text"
               id="name-inpf"
               class="article-edit__field-input"
+              placeholder="Introduce el nombre"
             />
           </article>
-          <article class="article-edit__form-field">
-            <h3
-              class="article-edit__field-title article-edit__field-title--price"
+          <article class="flex-column article-edit__form-field">
+            <label for="price-inpf">
+              <h3
+                class="article-edit__field-title article-edit__field-title--price"
+              >
+                Precio:
+              </h3></label
             >
-              Precio:
-            </h3>
             <input
               type="text"
               id="price-inpf"
               class="article-edit__field-input"
+              placeholder="Introduce el precio"
             />
           </article>
           <button type="submit" class="article-edit__form-button">

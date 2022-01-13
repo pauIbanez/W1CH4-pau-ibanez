@@ -119,6 +119,12 @@ h1 {
   border-width: 0;
   width: 150px;
   height: 30px;
+  transition: all 0.2s;
+}
+
+.article-edit__form-field input:focus {
+  outline: none;
+  height: 45px;
 }
 
 .article-edit__field-title--price::after {
