@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,46 @@
       href="assets/img/favicon.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>BuyIt</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="page-title">Lista de la compra</h1>
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-button nav-button--selected">Principal</li>
+          <li class="nav-button">Lista</li>
+          <li class="nav-button">Acerca de</li>
+        </ul>
+      </nav>
+      <section class="info">
+        <i class="fa fa-minus-circle"></i>
+        <span class="info__title info__title--counter">2/3</span>
+        <h2 class="info__title info__title--text">comprados</h2>
+      </section>
+    </header>
+    <main class="main-content main-content--active">
+      <section class="article-edit">
+        <h2 class="article-edit__title">Editar artículo</h2>
+        <form class="article-edit__form">
+          <article class="article-edit__form-field">
+            <h3 class="article-edit__field-title">Nombre:</h3>
+            <input type="text" id="" class="article-edit__field-input" />
+          </article>
+          <article class="article-edit__form-field">
+            <h3 class="article-edit__field-title">Precio:</h3>
+            <input type="text" id="" class="article-edit__field-input" /> €
+          </article>
+          <button type="submit" class="article-edit__form-button">
+            Modificar
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
