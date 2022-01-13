@@ -1,7 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
 * {
   box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+  color: #232929;
+  font-weight: 400;
 }
 
 body {
   margin: 0;
+  background-color: #ff8d27;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.paddings {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex-center-spaceb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__cont-right {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+#compCounter {
+  font-size: 24px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__menu {
+  height: 100px;
+  background-color: #5e81d1;
+}
+
+.header__info {
+  height: 70px;
+  background-color: #f87500;
+}
+
+.main-content {
+  padding-top: 20px;
+  display: none;
+}
+
+.main-content--active {
+  display: block;
+}
+
+.article-edit {
+  gap: 15px;
+}
+
+.article-edit__form {
+  gap: 10px;
+}
+
+.article-edit__form-field {
+  position: relative;
+  gap: 5px;
+}
+
+.article-edit__field-title {
+  font-weight: 300;
+}
+
+.article-edit__field-input {
+  border-width: 0;
+  width: 150px;
+  height: 30px;
+}
+
+.article-edit__field-title--price::after {
+  position: absolute;
+  height: 30px;
+  bottom: 0;
+  left: 150px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  content: "€";
+}
+
+.article-edit__form-button {
+  margin-top: 5px;
+  width: fit-content;
+  height: 30px;
+  background-color: #5e81d1;
+  color: white;
+  border-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
