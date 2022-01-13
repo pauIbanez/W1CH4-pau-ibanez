@@ -12,15 +12,29 @@ body {
   background-color: #ff8d27;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3 {
   margin: 0;
 }
 
+.fa {
+  font-size: 40px;
+}
+
 .paddings {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-center-spaceb {
@@ -48,6 +62,26 @@ h3 {
 .header__menu {
   height: 100px;
   background-color: #5e81d1;
+}
+
+.main-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+h1 {
+  font-size: 20px;
+}
+
+.nav-item {
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 10px;
+}
+
+.nav-item--selected {
+  font-weight: 600;
 }
 
 .header__info {
