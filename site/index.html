@@ -10,14 +10,14 @@
     />
     <link
       rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
+      href="../node_modules/font-awesome/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>BuyIt</title>
   </head>
   <body>
     <header class="header">
-      <section class="header__menu">
+      <section class="paddings header__menu">
         <h1 class="header__page-title">Lista de la compra</h1>
         <nav class="main-nav">
           <ul>
@@ -29,13 +29,19 @@
           </ul>
         </nav>
       </section>
-      <section class="info">
+      <section class="paddings header__info">
         <i class="fa fa-minus-circle"></i>
-        <span class="info__title info__title--counter">2/3</span>
-        <h2 class="info__title info__title--text">comprados</h2>
+        <div class="header__info-right">
+          <span
+            id="compCounter"
+            class="header__info-right header__info-right--counter"
+            >2/3</span
+          >
+          <h2 class="header__info-right header__info-right--text">comprados</h2>
+        </div>
       </section>
     </header>
-    <main class="main-content main-content--active">
+    <main class="paddings main-content main-content--active">
       <section class="article-edit">
         <h2 class="article-edit__title">Editar artículo</h2>
         <form class="article-edit__form">
