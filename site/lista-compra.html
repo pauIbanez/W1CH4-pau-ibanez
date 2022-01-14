@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/list-compra.css" />
+    <title>BuyIt</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="paddings flex-center-spaceb header__menu">
+        <h1 class="header__page-title">Lista de la compra</h1>
+        <nav class="main-nav">
+          <a href="index.html" class="flex-center nav-item">Principal</a>
+          <a href="#" class="flex-center nav-item nav-item--selected">Lista</a>
+          <a href="#" class="flex-center nav-item">Acerca de</a>
+        </nav>
+      </section>
+      <section class="paddings flex-center-spaceb header__info">
+        <i class="fa fa-minus-circle"></i>
+        <div class="header__cont-right">
+          <span
+            id="compCounter"
+            class="header__info-right header__info-right--counter"
+            >2/3</span
+          >
+          <h2 class="header__info-right header__info-right--text">comprados</h2>
+        </div>
+      </section>
+    </header>
+    <main class="paddings main-content main-content--active">
+      <section class="list-container">
+        <article class="list">
+          <div class="list__item" for="list-0">
+            <div class="left">
+              <input
+                type="checkbox"
+                name="shopinglist"
+                id="list-0"
+                class="list__item-checkbox list__item-checkbox--crossed"
+              />
+              <label for="list-0" class="list__item-label"></label>
+              <span class="list__item-name">Pan</span>
+            </div>
+            <div class="right">
+              <span class="list__item-price">0.75€</span
+              ><i class="fa fa-times"></i>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="left">
+              <input
+                type="checkbox"
+                name="shopinglist"
+                id="list-1"
+                class="list__item-checkbox"
+              />
+              <label for="list-1" class="list__item-label"></label>
+              <span class="list__item-name">Azúcar</span>
+            </div>
+            <div class="right">
+              <span class="list__item-price"></span>
+              <i class="fa fa-times"></i>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="left">
+              <input
+                type="checkbox"
+                name="shopinglist"
+                id="list-2"
+                class="list__item-checkbox list__item-checkbox--crossed"
+              />
+              <label for="list-2" class="list__item-label"></label>
+              <span class="list__item-name">Leche</span>
+            </div>
+            <div class="right">
+              <span class="list__item-price">1.20€</span
+              ><i class="fa fa-times"></i>
+            </div>
+          </div>
+        </article>
+        <artcle class="list-total">1.95€</artcle>
+      </section>
+    </main>
+  </body>
+</html>
