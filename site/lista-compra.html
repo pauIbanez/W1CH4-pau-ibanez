@@ -13,6 +13,7 @@
       href="node_modules/font-awesome/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/list-compra.css" />
     <title>BuyIt</title>
   </head>
   <body>
@@ -38,39 +39,58 @@
       </section>
     </header>
     <main class="paddings main-content main-content--active">
-      <section class="flex-column article-edit">
-        <h2 class="article-edit__title">Editar artículo</h2>
-        <form class="flex-column article-edit__form">
-          <article class="flex-column article-edit__form-field">
-            <label for="name-inpf">
-              <h3 class="article-edit__field-title">Nombre:</h3></label
-            >
-            <input
-              type="text"
-              id="name-inpf"
-              class="article-edit__field-input"
-              placeholder="Introduce el nombre"
-            />
-          </article>
-          <article class="flex-column article-edit__form-field">
-            <label for="price-inpf">
-              <h3
-                class="article-edit__field-title article-edit__field-title--price"
-              >
-                Precio:
-              </h3></label
-            >
-            <input
-              type="text"
-              id="price-inpf"
-              class="article-edit__field-input"
-              placeholder="Introduce el precio"
-            />
-          </article>
-          <button type="submit" class="article-edit__form-button">
-            Modificar
-          </button>
-        </form>
+      <section class="list-container">
+        <article class="list">
+          <div class="list__item" for="list-0">
+            <div class="left">
+              <input
+                type="checkbox"
+                name="shopinglist"
+                id="list-0"
+                class="list__item-checkbox list__item-checkbox--crossed"
+              />
+              <label for="list-0" class="list__item-label"></label>
+              <span class="list__item-name">Pan</span>
+            </div>
+            <div class="right">
+              <span class="list__item-price">0.75€</span
+              ><i class="fa fa-times"></i>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="left">
+              <input
+                type="checkbox"
+                name="shopinglist"
+                id="list-1"
+                class="list__item-checkbox"
+              />
+              <label for="list-1" class="list__item-label"></label>
+              <span class="list__item-name">Azúcar</span>
+            </div>
+            <div class="right">
+              <span class="list__item-price"></span>
+              <i class="fa fa-times"></i>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="left">
+              <input
+                type="checkbox"
+                name="shopinglist"
+                id="list-2"
+                class="list__item-checkbox list__item-checkbox--crossed"
+              />
+              <label for="list-2" class="list__item-label"></label>
+              <span class="list__item-name">Leche</span>
+            </div>
+            <div class="right">
+              <span class="list__item-price">1.20€</span
+              ><i class="fa fa-times"></i>
+            </div>
+          </div>
+        </article>
+        <artcle class="list-total">1.95€</artcle>
       </section>
     </main>
   </body>
